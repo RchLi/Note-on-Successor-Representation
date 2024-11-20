@@ -22,10 +22,12 @@ For simplicity, notation for policy $\pi$ is ommited in the derivation. Note tha
 
 ## Learning SR
 Notice that 
+
 $$
 \begin{align*}
   M(s, s^\prime) &=\sum_{k=0}^\infty\gamma^kP(S_{t+k}=s^\prime|S_t=s) \\
 &= E[\sum_{k=0}^\infty\gamma^k \mathbb{I}(S_{t+k}=s^\prime)|S_t=s]
 \end{align*}
 $$
+
 Thus SR can be learned with traditional MC method or TD learning.
